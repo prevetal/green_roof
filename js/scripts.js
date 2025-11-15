@@ -211,10 +211,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('.mob_header .mob_menu_btn').toggleClass('active')
 		$('body').toggleClass('lock')
 		$('header').toggleClass('show')
-
-		$('.mob_header .mob_menu_btn').hasClass('active')
-			? $('.overlay').fadeIn(300)
-			: $('.overlay').fadeOut(300)
 	})
 
 

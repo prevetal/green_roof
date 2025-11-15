@@ -22,6 +22,22 @@
 
 
 
+    /*------------
+        Header
+    ------------*/
+    header .sub_menu .col
+    {
+        width: 100%;
+    }
+
+
+    header .sub_menu.sub_menu_services .grid_row > *
+    {
+        width: 150px;
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/

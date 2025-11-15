@@ -30,6 +30,30 @@
 
 
 
+    /*------------
+        Header
+    ------------*/
+    header .sub_menu .row
+    {
+        gap: var(--inner_gap_b) var(--cont_padding);
+    }
+
+
+    header .sub_menu .col
+    {
+        width: calc(50% - var(--inner_gap) / 2);
+
+        gap: var(--inner_gap_b);
+    }
+
+
+    header .sub_menu .section
+    {
+        gap: var(--inner_gap);
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/
@@ -716,6 +740,23 @@
     .product_info .info
     {
         padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*------------------
+        Cookie modal
+    ------------------*/
+    .cookie_modal .cont
+    {
+        padding: 0;
+    }
+
+
+    .cookie_modal .data
+    {
+        padding-block: var(--inner_gap);
+        padding-inline: var(--inner_gap);
     }
 
 

@@ -58,24 +58,85 @@
     ------------*/
     header
     {
-        padding-block: var(--inner_gap);
+        padding-top: 68px;
     }
 
 
-    header .phone,
-    header .callback_btn
+    header .sub_menu.sub_menu_services .grid_row
     {
-        display: none;
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        margin-bottom: 0;
+        padding-inline: var(--cont_padding);
+
+        white-space: nowrap;
+
+        scroll-padding: 0 var(--cont_padding);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
     }
 
 
-    header .cart_link
+    header .sub_menu.sub_menu_services .grid_row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    header .sub_menu.sub_menu_services .grid_row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    header .sub_menu.sub_menu_services .grid_row > *
+    {
+        display: inline-block;
+
+        width: 200px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+
+    header .sub_menu.sub_menu_services .grid_row > * + *
+    {
+        margin-left: 12px;
+    }
+
+
+    header .sub_menu .service .thumb
+    {
+        margin-bottom: 8px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .cart_link,
+    .mob_header .mob_menu_btn
     {
         width: 36px;
     }
 
 
-    header .cart_link span
+    .mob_header .cart_link span
     {
         top: -4px;
         right: -9px;
@@ -596,6 +657,29 @@
     {
         margin-top: var(--inner_gap_m);
         padding-inline: var(--inner_gap_m);
+    }
+
+
+
+    /*------------------
+        Cookie modal
+    ------------------*/
+    .cookie_modal .data
+    {
+        padding-block: var(--inner_gap_m);
+        padding-inline: var(--inner_gap_m);
+    }
+
+
+    .cookie_modal .btns
+    {
+        margin-top: 0;
+    }
+
+
+    .cookie_modal .ok_btn
+    {
+        height: 40px;
     }
 
 
