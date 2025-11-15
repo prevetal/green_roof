@@ -1,0 +1,177 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --block_padding: 48px;
+        --block_padding_hor: 48px;
+    }
+
+
+    .swiper-button-prev
+    {
+        left: var(--cont_padding_double);
+
+        margin-left: 0;
+    }
+
+    .swiper-button-next
+    {
+        right: var(--cont_padding_double);
+
+        margin-right: 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu
+    {
+        gap: var(--cont_padding_double);
+    }
+
+
+    header .sub_menu .row
+    {
+        gap: 80px;
+    }
+
+
+    header .sub_menu.sub_menu_services .grid_row
+    {
+        --count_per_line: 5;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        padding-block: var(--inner_gap_b);
+    }
+
+
+    .main_slider .data
+    {
+        padding-inline: 100px;
+
+        gap: 40px;
+    }
+
+
+
+    /*--------------
+        Trust us
+    --------------*/
+    .trust_us .info
+    {
+        width: calc(50% - 36px);
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .swiper
+    {
+        width: calc(100% - 500px);
+    }
+
+
+    .cases .swiper-slide
+    {
+        width: 400px;
+    }
+
+
+    .cases .case
+    {
+        padding: var(--inner_gap_b);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .data:before
+    {
+        top: -360px;
+        right: -140px;
+
+        width: 1000px;
+    }
+
+
+
+    /*---------------
+        Cart_info
+    ---------------*/
+    .cart_info .data
+    {
+        width: calc(100% - 424px);
+    }
+
+
+    .cart_info .total
+    {
+        width: 400px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        padding-block: var(--outside_gap);
+
+        gap: 40px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data
+    {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .desc
+    {
+        padding: var(--inner_gap_b);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: var(--cont_padding_double);
+    }
+
+
+    footer .contacts .socials
+    {
+        margin-left: 40px;
+    }
+}

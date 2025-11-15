@@ -1,0 +1,819 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --outside_gap: 48px;
+        --outside_gap_s: 40px;
+        --border_radius: 24px;
+        --border_radius_s: 16px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding-block: var(--inner_gap);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .block_head .desc
+    {
+        margin-top: var(--inner_gap);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: var(--inner_gap_b);
+        padding-top: var(--inner_gap_m);
+    }
+
+
+    .page_head.absolute
+    {
+        position: absolute;
+        top: 68px;
+
+        width: 100%;
+
+        z-index: 5;
+    }
+
+
+    .page_head.white,
+    .page_head.white .breadcrumbs a .icon
+    {
+        color: var(--light_color);
+    }
+
+
+    .page_head .cont
+    {
+        gap: var(--inner_gap_b);
+    }
+
+
+
+    .breadcrumbs
+    {
+        gap: 2px;
+    }
+
+
+    .breadcrumbs > *:nth-child(4) ~ *
+    {
+        display: none;
+    }
+
+
+    .breadcrumbs a .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .breadcrumbs .current
+    {
+        display: block;
+    }
+
+
+
+    .page_desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+    .form .agree
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: var(--inner_gap);
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        padding-block: 0;
+
+        background: none;
+    }
+
+
+    .main_slider .cont
+    {
+        padding: 0;
+    }
+
+
+    .main_slider .data,
+    .main_slider .bg
+    {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+
+    .main_slider .data
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .main_slider .swiper-button-next,
+    .main_slider .swiper-button-prev
+    {
+        top: auto;
+        bottom: 40px;
+
+        margin: 0;
+    }
+
+
+    .main_slider .swiper-horizontal > .swiper-pagination-bullets,
+    .main_slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .main_slider .swiper-pagination-custom,
+    .main_slider .swiper-pagination-fraction
+    {
+        bottom: 53px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .grid_row
+    {
+        --count_per_line: 2;
+    }
+
+
+    .categories .grid .category,
+    .categories .grid .category.small,
+    .categories .grid .category.big
+    {
+        width: calc(50% - var(--inner_gap));
+    }
+
+
+
+    /*--------------
+        Trust us
+    --------------*/
+    .trust_us .cont
+    {
+        padding-inline: 0;
+    }
+
+
+    .trust_us .data
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .trust_us .image
+    {
+        margin-top: var(--inner_gap_b);
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .block_head
+    {
+        gap: var(--inner_gap);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .data .block_head
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .products .data .grid_row.inline
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .products .sort
+    {
+        display: none;
+    }
+
+
+    .products .grid_row
+    {
+        --count_per_line: 2;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .grid_row
+    {
+        --count_per_line: 1;
+    }
+
+
+    .services .service .name,
+    .services .service:hover .name
+    {
+        top: var(--inner_gap_m);
+        left: var(--inner_gap);
+
+        width: calc(100% - var(--inner_gap) * 2);
+
+        font-size: var(--font_size);
+        font-weight: 600;
+
+        text-transform: none;
+    }
+
+
+    .services .service .desc
+    {
+        padding: var(--inner_gap);
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head .cont
+    {
+        padding: 0;
+    }
+
+
+    .service_head .data
+    {
+        padding-block: 72px var(--inner_gap_m);
+        padding-inline: var(--cont_padding);
+
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+
+    .service_head .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-------------------
+        Service about
+    -------------------*/
+    .service_about .cont
+    {
+        padding: 0;
+    }
+
+
+    .service_about .data
+    {
+        padding-block: var(--inner_gap_m);
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .service_about .title
+    {
+        margin-inline: 0;
+        padding-block: 11px;
+    }
+
+
+    .service_about .desc
+    {
+        text-align: left;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .grid_row
+    {
+        margin-inline: calc(var(--cont_padding) * -1);
+
+        --offset_h: var(--zero_px);
+    }
+
+
+    .why_we .item .row
+    {
+        flex-direction: column;
+    }
+
+
+    .why_we .item .name
+    {
+        margin-bottom: var(--inner_gap);
+        padding-block: 11px;
+    }
+
+
+    .why_we .item .title,
+    .why_we .item .desc
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------------
+        Other services
+    --------------------*/
+    .other_services .title
+    {
+        padding-block: 11px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .cont
+    {
+        padding: 0;
+    }
+
+
+    .action_form .data
+    {
+        padding-block: var(--inner_gap_m);
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .action_form .title
+    {
+        padding-block: 11px;
+    }
+
+
+    .action_form .form_title
+    {
+        margin-bottom: var(--inner_gap_m);
+    }
+
+
+
+    /*-----------------
+        Landscaping
+    -----------------*/
+    .landscaping .for_what .title
+    {
+        padding-block: 11px;
+    }
+
+
+    .landscaping .for_what .col
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .landscaping .for_what .line
+    {
+        margin-top: var(--inner_gap_m);
+    }
+
+
+    .landscaping .service .name
+    {
+        padding-block: 11px;
+    }
+
+
+    .landscaping .service .order_btn
+    {
+        height: 40px;
+    }
+
+
+    .landscaping .service .thumb
+    {
+        height: 400px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .cont
+    {
+        padding: 0;
+    }
+
+
+    .contacts_info .data
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .contacts_info .location
+    {
+        gap: var(--inner_gap_m);
+    }
+
+
+    .contacts_info .location > *
+    {
+        gap: 8px;
+    }
+
+
+    .contacts_info .location .label,
+    .contacts_info .location .val
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .map
+    {
+        margin-top: var(--inner_gap_b);
+    }
+
+
+    .contacts_info .contacts
+    {
+        margin-top: var(--inner_gap_b);
+    }
+
+
+    .contacts_info .contacts > *
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    /*---------------
+        Cart_info
+    ---------------*/
+    .cart_info .list
+    {
+        gap: var(--inner_gap_m);
+    }
+
+
+    .cart_info .product
+    {
+        padding-top: var(--inner_gap_m);
+    }
+
+
+    .cart_info .product .thumb
+    {
+        width: 120px;
+        height: 120px;
+        padding-block: 16px;
+        padding-inline: 12px;
+    }
+
+
+    .cart_info .product .info
+    {
+        max-width: calc(100% - 140px);
+        min-height: 120px;
+    }
+
+
+
+    .cart_info .total .form .submit
+    {
+        padding-top: 8px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-block: 80px 48px;
+        padding-inline: var(--cont_padding);
+
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+
+    .about_info .data .pre_title
+    {
+        width: 247px;
+        max-width: 100%;
+
+        font-size: var(--font_size_s);
+        font-weight: 600;
+
+        border-radius: var(--border_radius);
+    }
+
+
+    .about_info .data .desc
+    {
+        width: 302px;
+
+        font-size: var(--font_size_b);
+    }
+
+
+
+    .about_info .section .desc
+    {
+        padding-inline: var(--inner_gap);
+    }
+
+
+    .about_info .section .image img
+    {
+        height: 224px;
+    }
+
+
+
+    /*--------------------
+        Our advantages
+    --------------------*/
+    .our_advantages .title
+    {
+        padding-block: 11px;
+    }
+
+
+    .our_advantages .item
+    {
+        padding-block: var(--inner_gap);
+
+        font-size: var(--font_size);
+    }
+
+
+    .our_advantages .item:before
+    {
+        top: var(--inner_gap);
+    }
+
+
+
+    /*-----------------
+        Our mission
+    -----------------*/
+    .our_mission .data
+    {
+        gap: var(--inner_gap_m);
+    }
+
+
+    .our_mission .title
+    {
+        padding-block: 11px;
+    }
+
+
+    .our_mission .image img
+    {
+        height: 312px;
+
+        object-position: 12.5% 50%;
+    }
+
+
+
+    /*---------------
+        Main site
+    ---------------*/
+    .main_site .title
+    {
+        width: 100%;
+        margin-bottom: var(--inner_gap_m);
+    }
+
+
+    .main_site .url,
+    .main_site .link
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .cont
+    {
+        padding: 0;
+    }
+
+
+    .product_info .images
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        display: none;
+    }
+
+
+    .product_info .data
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: var(--inner_gap);
+    }
+
+
+    .product_info .info
+    {
+        padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links,
+    footer .menu
+    {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    footer .links
+    {
+        margin-bottom: var(--inner_gap_m);
+
+        gap: var(--inner_gap);
+    }
+
+
+    footer .links .items
+    {
+        display: none;
+    }
+
+
+    footer .links .items > * + *
+    {
+        margin-top: var(--inner_gap);
+    }
+
+
+    footer .title a,
+    footer .menu a
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+        padding-bottom: 8px;
+
+        border-bottom: 1px dashed #cacaca;
+    }
+
+
+    footer .title a .icon
+    {
+        display: block;
+    }
+
+
+
+    footer .contacts
+    {
+        flex-direction: column;
+
+        margin-top: 40px;
+        padding-inline: 19px;
+
+        gap: var(--inner_gap_m);
+    }
+
+
+    footer .contacts .socials
+    {
+        align-self: flex-start;
+    }
+
+
+
+    footer .bottom .row
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: var(--inner_gap);
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-inline: var(--inner_gap_m);
+    }
+
+
+    .modal .success .btns
+    {
+        gap: 8px;
+    }
+
+
+    .modal .success .btns > *
+    {
+        width: 100%;
+    }
+}

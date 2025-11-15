@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<style>
+			*
+			{
+			    box-sizing: border-box;
+			    margin: 0;
+			    padding: 0;
+			}
+
+			*:before,
+			*:after
+			{
+			    box-sizing: border-box;
+			}
+
+
+			.demo_links
+			{
+			    padding: 60px;
+			}
+
+			.demo_links .title
+			{
+			    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+			    font-size: 30px;
+			    font-weight: 700;
+			    line-height: 38px;
+
+			    margin-bottom: 40px;
+			}
+
+			.demo_links ol
+			{
+			    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+			    font-size: 15px;
+			    line-height: 21px;
+
+			    counter-reset: li;
+
+			    column-gap: 40px;
+			    column-count: 4;
+			}
+
+			.demo_links ol li
+			{
+			    position: relative;
+
+			    display: block;
+			    overflow: hidden;
+
+			    padding-left: 25px;
+
+			    list-style-type: none;
+
+			    transform: translateZ(0);
+
+			    --webkit-column-break-inside: avoid;
+			    page-break-inside: avoid;
+			    break-inside: avoid;
+			}
+
+			.demo_links ol li + li
+			{
+			    margin-top: 20px;
+			}
+
+			.demo_links ol li:before
+			{
+			    color: var(--text_color);
+			    font-weight: 700;
+
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+
+			    content: counters(li, '.') '.';
+			    counter-increment: li;
+			}
+
+
+			.demo_links li a
+			{
+			    color: #000;
+			}
+
+			.demo_links li a:hover
+			{
+			    text-decoration: none;
+			}
+
+
+			@media (max-width: 1279px)
+			{
+			    .demo_links ol
+			    {
+			        column-count: 3;
+			    }
+			}
+
+
+			@media (max-width: 1023px)
+			{
+			    .demo_links
+			    {
+			        padding: 40px;
+			    }
+
+			    .demo_links .title
+			    {
+			        font-size: 28px;
+			        line-height: 34px;
+
+			        margin-bottom: 25px;
+			    }
+
+			    .demo_links ol
+			    {
+			        column-count: 2;
+			    }
+			}
+
+
+			@media (max-width: 767px)
+			{
+			    .demo_links
+			    {
+			        padding: 30px;
+			    }
+
+			    .demo_links .title
+			    {
+			        font-size: 26px;
+			        line-height: 32px;
+			    }
+
+			    .demo_links ol
+			    {
+			        column-gap: 40px;
+			    }
+			}
+
+
+			@media (max-width: 479px)
+			{
+			    .demo_links
+			    {
+			        padding: 20px;
+			    }
+
+			    .demo_links .title
+			    {
+			        font-size: 22px;
+			        line-height: 28px;
+
+			        margin-bottom: 25px;
+			    }
+
+			    .demo_links ol
+			    {
+			        column-count: 1;
+			    }
+
+			    .demo_links ol li + li
+			    {
+			        margin-top: 15px;
+			    }
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="demo_links">
+			<div class="title">Вёрстка сайта "GreenRoof".</div>
+
+			<ol>
+				<li><a href="./index.html" target="_blank">Главная страница</a></li>
+				<li><a href="./about.html" target="_blank">О компании</a></li>
+				<li><a href="./cart.html" target="_blank">Корзина</a></li>
+				<li><a href="./cart_empty.html" target="_blank">Корзина пустая</a></li>
+				<li><a href="./category.html" target="_blank">Категория товаров</a></li>
+				<li><a href="./category2.html" target="_blank">Категория товаров 2</a></li>
+				<li><a href="./contacts.html" target="_blank">Контакты</a></li>
+				<li><a href="./landscaping.html" target="_blank">Озеленение</a></li>
+				<li><a href="./product.html" target="_blank">Страница товара</a></li>
+				<li><a href="./service.html" target="_blank">Страница услуги</a></li>
+				<li><a href="./service2.html" target="_blank">Страница услуги 2</a></li>
+				<li><a href="./service3.html" target="_blank">Страница услуги 3</a></li>
+				<li><a href="./service4.html" target="_blank">Страница услуги 4</a></li>
+				<li><a href="./services.html" target="_blank">Усдуги</a></li>
+			</ol>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,315 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_s: 13px;
+        --font_size: 15px;
+        --font_size_b: 16px;
+        --font_size_title_s: 18px;
+        --font_size_title: 22px;
+        --font_size_title_m: 28px;
+        --font_size_title_b: 40px;
+        --block_head_offset: 28px;
+        --outside_gap: 68px;
+        --outside_gap_s: 40px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu
+    {
+        margin-left: var(--cont_padding_double);
+
+        gap: var(--outside_gap_s);
+    }
+
+
+    header .sub_menu,
+    header .sub_menu.sub_menu_services
+    {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+
+    header .sub_menu .row
+    {
+        gap: 56px;
+    }
+
+
+
+    header .phone a,
+    header .callback_btn
+    {
+        height: 44px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .all_link a
+    {
+        height: 40px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        padding-inline: 88px;
+
+        gap: var(--inner_gap_b);
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .block_head
+    {
+        width: 388px;
+    }
+
+
+    .cases .block_head .btn
+    {
+        height: 40px;
+    }
+
+
+    .cases .swiper
+    {
+        width: calc(100% - 460px);
+    }
+
+
+    .cases .swiper-slide
+    {
+        width: 360px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .data:before
+    {
+        top: -320px;
+        right: -120px;
+
+        width: 920px;
+    }
+
+
+    .products .sort
+    {
+        gap: 40px;
+    }
+
+
+    .products .grid_row
+    {
+        --count_per_line: 5;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .name
+    {
+        top: var(--inner_gap_m);
+        left: var(--inner_gap_m);
+    }
+
+
+    .services .service:hover .name
+    {
+        width: calc(100% - var(--inner_gap_m) * 2);
+    }
+
+
+    .services .service .desc
+    {
+        padding: var(--inner_gap_m);
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head .info
+    {
+        width: calc(100% - 600px);
+    }
+
+
+    .service_head .order_btn
+    {
+        margin-top: var(--inner_gap_m);
+    }
+
+
+    .service_head .image
+    {
+        width: 560px;
+    }
+
+
+
+    /*-------------------
+        Service about
+    -------------------*/
+    .service_about .data
+    {
+        padding-block: 40px;
+    }
+
+
+    .service_about .desc
+    {
+        font-size: var(--font_size_title_m);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .item .name
+    {
+        margin-bottom: var(--inner_gap);
+    }
+
+
+
+    /*--------------------
+        Other services
+    --------------------*/
+    .other_services .list a
+    {
+        padding-block: calc(var(--inner_gap) - 1px);
+    }
+
+
+    .other_services .list a:before
+    {
+        top: var(--inner_gap);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        min-height: 360px;
+        padding-block: var(--block_padding) 60px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .data
+    {
+        padding-block: 40px 60px;
+    }
+
+
+    .action_form .whatsapp_link
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        padding-block: 40px;
+
+        gap: var(--inner_gap_b);
+    }
+
+
+
+    .about_info .section .desc
+    {
+        padding-block: var(--inner_gap_m);
+        padding-inline: var(--inner_gap_m);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .big
+    {
+        width: calc(100% - 124px);
+    }
+
+
+    .product_info .images .thumbs
+    {
+        width: 108px;
+    }
+
+
+
+    .product_info .info
+    {
+        padding-inline: var(--inner_gap_b);
+    }
+
+
+    .product_info .head
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .product_info .bottom
+    {
+        margin-top: 8px;
+    }
+
+
+    .product_info .tabs_container
+    {
+        margin-top: var(--inner_gap_b);
+        padding-inline: var(--inner_gap_b);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts .socials
+    {
+        margin-left: var(--cont_padding);
+    }
+}

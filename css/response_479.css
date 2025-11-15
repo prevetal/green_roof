@@ -1,0 +1,184 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_m: 22px;
+        --font_size_title_b: 24px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .icon
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: var(--inner_gap);
+    }
+
+
+    .block_head .all_link a
+    {
+        height: 36px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        gap: var(--inner_gap_m);
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .category
+    {
+        padding: calc(var(--inner_gap_s) - 1px);
+    }
+
+
+
+    /*--------------
+        Trust us
+    --------------*/
+    .trust_us .pluses
+    {
+        font-size: var(--font_size);
+        font-weight: 400;
+    }
+
+
+    .trust_us .pluses > *
+    {
+        padding-inline: 11px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product
+    {
+        padding: 8px;
+    }
+
+
+    .products .product .stickers
+    {
+        top: 16px;
+        left: 16px;
+    }
+
+
+    .products .product .name,
+    .products .product .price
+    {
+        font-size: var(--font_size_s);
+    }
+
+
+    .products .product .buy_btn
+    {
+        height: 36px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .item .title br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .form_title
+    {
+        font-size: var(--font_size_b);
+    }
+
+
+
+    /*---------------
+        Cart_info
+    ---------------*/
+    .cart_info .product
+    {
+        position: relative;
+
+        padding-left: 100px;
+    }
+
+
+    .cart_info .product .image
+    {
+        position: absolute;
+        top: var(--inner_gap_m);
+        left: 0;
+    }
+
+
+    .cart_info .product .thumb
+    {
+        width: 80px;
+        height: 80px;
+        padding: 12px;
+    }
+
+
+    .cart_info .product .info
+    {
+        max-width: 100%;
+        min-height: 0;
+    }
+
+
+    .cart_info .product .row + .row
+    {
+        width: calc(100% + 100px);
+        margin-top: var(--inner_gap_m);
+        margin-left: -100px;
+    }
+
+
+    .cart_info .product .name
+    {
+        width: 100%;
+    }
+
+
+    .cart_info .product .price
+    {
+        margin-top: var(--inner_gap);
+    }
+}
