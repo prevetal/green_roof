@@ -2076,6 +2076,178 @@ header .cart_link:hover
 }
 
 
+.products .mob_sort
+{
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: var(--inner_gap_m);
+}
+
+
+.products .mob_sort .label
+{
+    font-size: var(--font_size_s);
+    font-weight: 600;
+    line-height: 140%;
+
+    color: var(--grey_color);
+}
+
+
+.products .mob_sort .field
+{
+    position: relative;
+}
+
+
+.products .mob_sort select
+{
+    display: none;
+}
+
+
+.products .mob_sort .nice-select
+{
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.products .mob_sort .nice-select > .current,
+.products .mob_sort .nice-select .multiple-options
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    height: 36px;
+    padding-inline: 8px 32px;
+
+    font-size: var(--font_size);
+    font-weight: 500;
+    line-height: 140%;
+
+    border-radius: 12px;
+    background: var(--bg_white);
+    box-shadow: 1px 2px 8px 0 rgba(48, 52, 54, .05);
+}
+
+
+.products .mob_sort .nice-select > .current span
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.products .mob_sort .nice-select-dropdown
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    min-width: 100%;
+    margin-top: 4px;
+    padding-block: 4px;
+
+    z-index: 9;
+    transition: .2s linear;
+    transform: none;
+
+    opacity: 0;
+    border-radius: 12px;
+    background: var(--bg_white);
+    box-shadow: 1px 2px 8px 0 rgba(48, 52, 54, .05);
+}
+
+
+.products .mob_sort .nice-select .list
+{
+    gap: 0;
+}
+
+
+.products .mob_sort .nice-select .list .option
+{
+    display: block;
+
+    padding: 4px 8px;
+
+    list-style-type: none;
+
+    font-size: var(--font_size);
+    font-weight: 500;
+    line-height: 140%;
+
+    cursor: pointer;
+    transition: color .2s linear;
+    white-space: nowrap;
+
+    color: var(--grey_color);
+}
+
+
+.products .mob_sort .nice-select .list .option:hover,
+.products .mob_sort .nice-select .list .option.selected
+{
+    color: var(--dark_color);
+}
+
+
+.products .mob_sort .nice-select .list .option:empty
+{
+    display: none;
+}
+
+
+.products .mob_sort select ~ .arr
+{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    bottom: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    margin-block: auto;
+
+    transition: transform .2s linear;
+    pointer-events: none;
+
+    color: var(--primary_color);
+}
+
+
+.products .mob_sort .nice-select.open .nice-select-dropdown
+{
+    visibility: visible;
+
+    transform: none;
+
+    opacity: 1;
+}
+
+
+.products .mob_sort .nice-select.open ~ .arr
+{
+    transform: rotate(180deg);
+}
+
+
 .products .data
 {
     position: relative;

@@ -261,6 +261,12 @@
     }
 
 
+    .products .mob_sort
+    {
+        display: flex;
+    }
+
+
     .products .grid_row
     {
         --count_per_line: 2;

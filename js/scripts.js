@@ -231,6 +231,25 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
+	// Custom select - Nice select
+	const selects = document.querySelectorAll('select:not(.skip)'),
+		selectsInstances = []
+
+	if (selects) {
+		selects.forEach(el => {
+			selectsInstances.push(NiceSelect.bind(el, {
+				placeholder: el.getAttribute('data-placeholder')
+			}))
+
+			el.addEventListener('change', () => el.classList.add('selected'))
+
+			if (el.querySelector('option[selected]')) {
+				el.classList.add('selected')
+			}
+		})
+	}
+
+
 	if (is_touch_device()) {
 		const subMenus = document.querySelectorAll('header .menu .sub_menu')
 
