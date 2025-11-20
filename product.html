@@ -812,63 +812,118 @@
 		</section>
 
 
-		<section class="modal" id="order_modal">
-			<div class="modal_title">Введите данные, и мы перезвоним для подтверждения заказа</div>
+		<section class="modal" id="order_modal" data-modal-bg="#f3f3f3">
+			<div class="modal_title">Давайте сделаем это возможным</div>
 
 			<form action="" class="form">
-				<div class="line">
-					<div class="field">
-						<input type="text" name="" value="" class="input" placeholder="Введите имя*">
+				<div class="section">
+					<div class="title">Выберите услуги*</div>
+
+					<div class="line service">
+						<div class="field grid_row">
+							<label>
+								<input type="radio" name="service">
+
+								<div class="check">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<div>Кровельные работы</div>
+							</label>
+
+							<label>
+								<input type="radio" name="service">
+
+								<div class="check">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<div>Монтажные работы</div>
+							</label>
+
+							<label>
+								<input type="radio" name="service">
+
+								<div class="check">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<div>Собственное производство</div>
+							</label>
+
+							<label>
+								<input type="radio" name="service">
+
+								<div class="check">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<div>Зеленые фасады</div>
+							</label>
+
+							<label>
+								<input type="radio" name="service">
+
+								<div class="check">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<div>Ремонтные работы</div>
+							</label>
+
+							<label>
+								<input type="radio" name="service">
+
+								<div class="check">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<div>Собственный питомник</div>
+							</label>
+						</div>
 					</div>
 				</div>
 
-				<div class="line">
-					<div class="field">
-						<input type="tel" name="" value="" class="input" placeholder="+7 (---) --- -- --*">
+				<div class="section">
+					<div class="title">Заполните данные для связи*</div>
+
+					<div class="columns">
+						<div class="line width1of3">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Введите имя*">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="+7 (---) --- -- --*">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Комментарий">
+							</div>
+						</div>
 					</div>
-				</div>
-
-				<div class="line">
-					<div class="field">
-						<input type="text" name="" value="" class="input" placeholder="Сообщение">
-					</div>
-				</div>
-
-				<div class="line agree">
-					<label class="checkbox">
-						<input type="checkbox" name="agree">
-
-						<div class="check"></div>
-
-						<div>Отправляя данные, я соглашаюсь с <a href="/" target="_blank">Политикой Конфиденциальности</a></div>
-					</label>
 				</div>
 
 				<div class="submit">
-					<button type="button" class="back_btn close_btn">Назад</button>
+					<div class="agree">
+						<label class="checkbox">
+							<input type="checkbox" name="agree">
+
+							<div class="check">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+							</div>
+
+							<div>Отправляя данные, я соглашаюсь с <a href="/" target="_blank">Политикой Конфиденциальности</a></div>
+						</label>
+					</div>
 
 					<button type="submit" class="submit_btn">Оставить заявку</button>
 				</div>
 			</form>
-
-			<div class="success">
-				<div class="icon">
-					<svg><use xlink:href="images/sprite.svg#ic_success"></use></svg>
-				</div>
-
-				<div class="title">Спасибо за заявку!<br> Данные успешно отправлены менеджеру.</div>
-
-				<div class="btns">
-					<div><a href="/" class="btn">
-						<span>Посмотреть услуги ГРИНРУФ</span>
-					</a></div>
-
-					<duv><button class="btn">
-						<span>Остались вопросы</span>
-						<svg><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
-					</button></duv>
-				</div>
-			</div>
 		</section>
 
 

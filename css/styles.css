@@ -1463,7 +1463,7 @@ header .cart_link:hover
 .form
 {
     --form_border_color: var(--light_color);
-    --form_focus_color: var(--light_color);
+    --form_focus_color: var(--primary_color);
     --form_error_color: #e85252;
     --form_border_radius: var(--border_radius);
     --form_bg_color: var(--light_color);
@@ -1494,6 +1494,23 @@ header .cart_link:hover
 .form :-ms-input-placeholder
 {
     color: var(--form_placeholder_color);
+}
+
+
+.form .section
+{
+    margin-bottom: 36px;
+}
+
+
+.form .section .title
+{
+    margin-bottom: var(--inner_gap_m);
+
+    font-size: var(--font_size_s);
+    line-height: 120%;
+
+    color: var(--grey_color);
 }
 
 
@@ -1618,26 +1635,21 @@ header .cart_link:hover
     width: 20px;
     height: 20px;
 
+    transition: .2s linear;
+
+    color: var(--light_color);
     border: 1px solid var(--grey_soft_color);
     border-radius: 6px;
     background: var(--form_bg_color);
 }
 
 
-.form .checkbox .check:after
+.form .checkbox .check .icon
 {
     display: block;
 
-    width: 10px;
-    height: 5px;
-
-    content: '';
-    transition: opacity .2s linear;
-    transform: rotate(-45deg);
-
-    opacity: 0;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
+    width: 12px;
+    height: 12px;
 }
 
 
@@ -1659,9 +1671,113 @@ header .cart_link:hover
 }
 
 
-.form .checkbox input:checked ~ .check:after
+.form .checkbox input:checked ~ .check
+{
+    border-color: var(--primary_color);
+    background: var(--primary_color);
+}
+
+
+.form .checkbox input:checked ~ .check .icon
 {
     opacity: 1;
+}
+
+
+.form .service .grid_row
+{
+    --offset_h: var(--inner_gap);
+    --offset_v: var(--inner_gap);
+}
+
+
+.form .service label
+{
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+
+.form .service label input
+{
+    display: none;
+}
+
+
+.form .service label .check
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 14px;
+    height: 14px;
+    margin-block: auto;
+
+    transition: .2s linear;
+
+    color: var(--light_color);
+    border: 1px solid var(--grey_soft_color);
+    border-radius: 4px;
+    background: var(--bg_white);
+}
+
+
+.form .service label .check .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+}
+
+
+.form .service label .check + *
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 48px;
+    padding-inline: 37px 15px;
+
+    transition: border-color .2s linear;
+
+    color: var(--grey_color);
+    border: 1px solid transparent;
+    border-radius: var(--border_radius);
+    background: var(--bg_light);
+}
+
+
+.form .service label input:checked ~ .check
+{
+    border-color: var(--primary_color);
+    background: var(--primary_color);
+}
+
+
+.form .service label input:checked ~ .check .icon
+{
+    opacity: 1;
+}
+
+
+.form .service label input:checked ~ .check + *
+{
+    border-color: var(--primary_color);
 }
 
 
@@ -5795,7 +5911,7 @@ footer .bottom a:hover
 .modal .form
 {
     --form_border_color: var(--bg);
-    --form_focus_color: var(--bg);
+    --form_focus_color: var(--primary_color);
     --form_bg_color: var(--bg);
 }
 
@@ -5966,4 +6082,83 @@ footer .bottom a:hover
 .modal .success .btns .btn:hover
 {
     background: var(--primary_color_h);
+}
+
+
+
+/*-------------------
+    PopUp - Order
+-------------------*/
+#order_modal
+{
+    position: static;
+
+    padding: 0;
+
+    background: none;
+
+    --modal_width: 872px;
+}
+
+
+#order_modal > *.is-close-btn,
+#order_modal > *.f-button.is-close-btn
+{
+    position: absolute;
+    top: 80px;
+    right: 50%;
+
+    display: flex;
+
+    margin-right: -720px;
+
+    transition: .2s linear;
+
+    --f-button-width: 44px;
+    --f-button-height: 44px;
+    --f-button-border-radius: 50%;
+    --f-button-color: var(--dark_color);
+    --f-button-hover-color: var(--light_color);
+    --f-button-svg-width: 16px;
+    --f-button-svg-height: 16px;
+    --f-button-bg: var(--bg);
+    --f-button-hover-bg: var(--primary_color);
+    --f-button-active-bg: var(--primary_color);
+}
+
+
+#order_modal .modal_title
+{
+    margin-bottom: var(--block_head_offset);
+
+    font-size: var(--font_size_title);
+    font-weight: 700;
+    line-height: 120%;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#order_modal .form .submit
+{
+    margin-top: calc(var(--form_line_offset) * -1);
+    padding: 0;
+}
+
+
+#order_modal .form .submit_btn
+{
+    width: 279px;
+    height: 51px;
+
+    font-size: var(--font_size);
+
+    background: var(--secondary_color);
+}
+
+
+#order_modal .form .submit_btn:hover
+{
+    background: var(--secondary_color_h);
 }

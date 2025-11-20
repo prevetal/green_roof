@@ -157,13 +157,19 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .service .grid_row
+    {
+        --count_per_line: 2;
+    }
+
+
     .form .submit_btn
     {
         width: 240px;
     }
 
 
-    .form .agree
+    .form .submit .agree
     {
         width: calc(100% - 264px);
     }
@@ -716,5 +722,40 @@
     footer .data
     {
         padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*-------------------
+        PopUp - Order
+    -------------------*/
+    #order_modal
+    {
+        padding-inline: 80px;
+    }
+
+
+    #order_modal > *.is-close-btn,
+    #order_modal > *.f-button.is-close-btn
+    {
+        right: var(--inner_gap);
+    }
+
+
+    #order_modal .form .columns > *.width1of3
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+
+    #order_modal .form .columns > *.width1of3:last-child
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    #order_modal .form .submit .agree
+    {
+        width: calc(100% - 310px);
     }
 }

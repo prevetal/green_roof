@@ -174,4 +174,18 @@
     {
         margin-left: 40px;
     }
+
+
+
+    /*-------------------
+        PopUp - Order
+    -------------------*/
+    #order_modal > *.is-close-btn,
+    #order_modal > *.f-button.is-close-btn
+    {
+        top: 40px;
+        right: 40px;
+
+        margin: 0;
+    }
 }

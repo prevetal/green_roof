@@ -182,7 +182,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		Fancybox.show([{
 			src: document.getElementById(e.target.getAttribute('data-modal')),
 			type: 'inline'
-		}])
+		}], {
+			on: {
+				reveal: (fancybox, slide) => {
+					const color = slide.contentEl.dataset.modalBg
+					console.log(color)
+
+					if (color) {
+						fancybox.container.querySelector(".fancybox__backdrop").style.background = color
+					}
+				}
+			}
+		})
 	})
 
 

@@ -141,6 +141,12 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .service .grid_row
+    {
+        --count_per_line: 1;
+    }
+
+
     .form .columns > *.width1of3
     {
         width: calc(100% - var(--form_columns_offset));
@@ -861,6 +867,46 @@
 
     .modal .success .btns > *
     {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        PopUp - Order
+    -------------------*/
+    #order_modal
+    {
+        padding-block: 64px;
+        padding-inline: 0;
+    }
+
+
+    #order_modal > *.is-close-btn,
+    #order_modal > *.f-button.is-close-btn
+    {
+        top: 24px;
+    }
+
+
+    #order_modal .form .columns > *.width1of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    #order_modal .form .submit .agree
+    {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: var(--inner_gap);
+    }
+
+
+    #order_modal .form .submit_btn
+    {
+        order: 5;
+
         width: 100%;
     }
 }
