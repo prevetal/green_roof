@@ -171,7 +171,7 @@
 
     .form .submit .agree
     {
-        width: calc(100% - 264px);
+        width: calc(100%);
     }
 
 
@@ -214,6 +214,16 @@
     {
         width: 40px;
         height: 40px;
+    }
+
+
+
+    /*---------------
+        Solutions
+    ---------------*/
+    .solutions .item .image
+    {
+        margin-bottom: 0;
     }
 
 
@@ -690,6 +700,22 @@
 
 
 
+    /*-------------------
+        Solution info
+    -------------------*/
+    .solution_info .documents .grid_row
+    {
+        --count_per_line: 6;
+    }
+
+
+    .solution_info .documents .item .icon svg
+    {
+        opacity: 1;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -757,5 +783,16 @@
     #order_modal .form .submit .agree
     {
         width: calc(100% - 310px);
+    }
+
+    .form .section
+    {
+        margin-bottom: 16px;
+    }
+
+    .info_with_form .form .agree
+    {
+        margin-top: 0 !important;
+        margin-bottom: 10px;
     }
 }

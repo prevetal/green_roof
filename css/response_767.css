@@ -767,6 +767,35 @@
 
 
 
+    /*-------------------
+        Solution info
+    -------------------*/
+    .solution_info .documents .grid_row
+    {
+        --count_per_line: 4;
+    }
+
+
+
+    .solution_info .features .items
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .solution_info .features .label
+    {
+        width: 160px;
+    }
+
+
+    .solution_info .features .val
+    {
+        width: calc(100% - 160px - var(--inner_gap));
+    }
+
+
+
     /*------------
         Footer
     ------------*/

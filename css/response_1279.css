@@ -588,6 +588,41 @@
 
 
 
+    /*-------------------
+        Solution info
+    -------------------*/
+    .solution_info .documents
+    {
+        width: 100%;
+    }
+
+
+    .solution_info .documents .grid_row
+    {
+        --count_per_line: 7;
+    }
+
+
+
+    .solution_info .features
+    {
+        width: 100%;
+    }
+
+
+    .solution_info .features .label
+    {
+        width: 200px;
+    }
+
+
+    .solution_info .features .val
+    {
+        width: calc(100% - 200px - var(--inner_gap));
+    }
+
+
+
     /*------------
         Footer
     ------------*/

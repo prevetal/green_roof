@@ -161,6 +161,29 @@
 
 
 
+    /*-------------------
+        Solution info
+    -------------------*/
+    .solution_info .documents
+    {
+        width: calc(50% - var(--outside_gap_s) / 2);
+    }
+
+
+    .solution_info .features
+    {
+        width: calc(50% - var(--outside_gap_s) / 2);
+        margin-right: 0;
+    }
+
+
+    .solution_info .features .items
+    {
+        font-size: var(--font_size_b);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

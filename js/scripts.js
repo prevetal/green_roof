@@ -49,6 +49,81 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
+	// Solutions slider
+	const solutionsSliders = [],
+		solutions = document.querySelectorAll('.solutions .swiper')
+
+	solutions.forEach((el, i) => {
+		el.classList.add('solutions_s' + i)
+
+		let options = {
+			loop: true,
+			loopAdditionalSlides: 1,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			breakpoints: {
+				0: {
+					spaceBetween: 8,
+					slidesPerView: 1
+				},
+				768: {
+					spaceBetween: 8,
+					slidesPerView: 2
+				},
+				1024: {
+					spaceBetween: 16,
+					slidesPerView: 3
+				}
+			},
+			on: {
+				resize: swiper => {
+					let items = swiper.el.querySelectorAll('.item .name')
+
+					items.forEach(el => el.style.height = 'auto')
+
+					setHeight(items)
+				}
+			}
+		}
+
+		solutionsSliders.push(new Swiper('.solutions_s' + i, options))
+	})
+
+
+	// Solution info slider
+	const photoGallerySliders = [],
+		photoGallery = document.querySelectorAll('.photo_gallery .swiper')
+
+	photoGallery.forEach((el, i) => {
+		el.classList.add('photo_gallery_s' + i)
+
+		let options = {
+			loop: true,
+			loopAdditionalSlides: 1,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			breakpoints: {
+				0: {
+					spaceBetween: 8,
+					slidesPerView: 1
+				},
+				1024: {
+					spaceBetween: 16,
+					slidesPerView: 2
+				}
+			}
+		}
+
+		photoGallerySliders.push(new Swiper('.photo_gallery_s' + i, options))
+	})
+
+
 	// Cases slider
 	const casesSliders = [],
 		cases = document.querySelectorAll('.cases .swiper')
@@ -163,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	Fancybox.defaults.tpl = {
-		closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close"></use></svg></button>',
+		closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="' + window.location.origin + '/wp-content/themes/raten/images/sprite.svg#ic_close"></use></svg></button>',
 
 		main: `<div class="fancybox__container" role="dialog" aria-modal="true" aria-label="{{MODAL}}" tabindex="-1">
 			<div class="fancybox__backdrop"></div>
@@ -288,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Changing the quantity of goods
-	$('body').on('click', '.amount .minus', function (e) {
+	/*$('body').on('click', '.amount .minus', function (e) {
 		e.preventDefault()
 
 		const $parent = $(this).closest('.amount'),
@@ -312,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			unit = $input.data('unit')
 
 		if (inputVal < maximum) $input.val(inputVal + step + unit)
-	})
+	})*/
 
 
 	// Cookie modal
@@ -402,6 +477,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		$(this).closest('.title').next().slideToggle(300)
 	})
 
+	$('.js-show-form').click(function(e) {
+		e.preventDefault()
+		$(".first_step").addClass("hide");
+		$(".info_with_form").removeClass("now_show_block");
+	})
+
+	$('.info_with_form .back').click(function(e) {
+		e.preventDefault()
+		$(".first_step").removeClass("hide");
+		$(".info_with_form").addClass("now_show_block");
+	})
+
 
 	// Submit form
 	$('#order_modal form').submit(function(e) {
@@ -411,6 +498,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		modal.find('.success').addClass('show')
 	})
+
+    $('.form .service label input').after('<div class="check"><svg class="icon"><use xlink:href="' + window.location.origin + '/wp-content/themes/raten/images/sprite.svg#ic_check"></use></svg></div>');
 })
 
 

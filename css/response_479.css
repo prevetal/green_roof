@@ -9,7 +9,11 @@
         --font_size_title_b: 24px;
     }
 
-
+    .products .product .thumb img
+    {
+        width: 100%;
+        height: 150px;
+    }
 
     /*---------------
         Accordion
@@ -196,5 +200,42 @@
     .cart_info .product .price
     {
         margin-top: var(--inner_gap);
+    }
+
+
+
+    /*-------------------
+        Solution info
+    -------------------*/
+    .solution_info .documents .grid_row
+    {
+        --count_per_line: 2;
+    }
+
+
+    .solution_info .documents .item .img
+    {
+        height: 72px;
+
+        aspect-ratio: auto;
+    }
+
+
+    .solution_info .documents .item .img img
+    {
+        width: 32px;
+    }
+
+
+
+    .solution_info .features .label
+    {
+        width: 152px;
+    }
+
+
+    .solution_info .features .val
+    {
+        width: calc(100% - 152px - var(--inner_gap));
     }
 }

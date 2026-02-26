@@ -305,6 +305,28 @@
 
 
 
+    /*-------------------
+        Solution info
+    -------------------*/
+    .solution_info .features .items > *
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .solution_info .features .label
+    {
+        width: 160px;
+    }
+
+
+    .solution_info .features .val
+    {
+        width: calc(100% - 160px - var(--inner_gap));
+    }
+
+
+
     /*------------
         Footer
     ------------*/
